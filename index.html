@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="lg:bg-red-200 md:bg-yellow-200 sm:bg-blue-100">
+        <nav class="container mx-auto flex items-center justify-between flex-wrap bg-teal-500 p-6">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <img class="w-64 " src="icons/Group 33072.png" alt="">
+            </div>
+            <div class="block lg:hidden">
+              <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              </button>
+            </div>
+            <div class="w-full block flex lg:flex lg:items-center lg:w-auto">
+              <div class="text-sm lg:flex">
+                <a href="#responsive-header" class="font-semibold block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6">
+                    Home
+                </a>
+                <a href="#responsive-header" class="font-semibold block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6">
+                    Product
+                </a>
+                <a href="#responsive-header" class="font-semibold block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6">
+                  About us
+                </a>
+                <a href="#responsive-header" class="font-semibold block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6">
+                   Contact us
+                  </a>
+                
+            </div>
+            <!-- <div>
+              <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+            </div> -->
+          </div>
+        </nav>
+        <section class="container mx-auto md:flex items-center px-4 py-8">
+                <div class="space-y-4">
+                    <h1 class="text-6xl font-bold uppercase"><span class="text-yellow-400">Be the Penguins</span>
+                     <br><span class="text-gray-700">Of Winter</span>
+                    </h1>
+                    <p class="w-2/3">Penguins are a group of aquatic flightless birds. They exclusively in the Southern Hemisphere</p>
+                    <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 lg:from-blue-500 md:hover:from-blue-700">
+                        <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                </div>
+                <div>
+                     <img src="images/model.png" alt="">
+                </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container mx-auto">
+            <h1 class="uppercase font-bold text-gray-800 text-3xl my-8 px-4">W0Man Jacket</h1>
+
+            <!----------------- Woman Ajcket Container --------------->
+            <div class="grid lg:grid-cols-3 gap-7">
+                <div class="shadow-lg rounded-2xl p-4 space-y-2">
+                    <div class="rounded-2xl bg-gray-200 py-6">
+                        <img class="h-64 mx-auto" src="images/jacket-1.png" alt="">
+                    </div>
+                    <h3 class=" text-2xl text-gray-800 font-bold">Yellow Coat Jacket </h3>
+                    <p>Winter clothes are especially outerwear like coats, jackets, hats and  mittens, earmuffs.</p>
+                    <div class="lg:flex justify-between space-y-2">
+                        <h4 class="font-black text-4xl text-yellow-400">$250</h4>
+                        <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-green-500 lg:from-blue-500 md:hover:from-blue-700">
+                            <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-2xl p-4 space-y-2">
+                    <div class="rounded-2xl bg-gray-200 py-6">
+                        <img class="h-64 mx-auto" src="images/jacket-2.png" alt="">
+                    </div>
+                    <h3 class=" text-2xl text-gray-800 font-bold">Ladies Jacket </h3>
+                    <p>Winter clothes are especially outerwear like coats, jackets, hats and  mittens, earmuffs.</p>
+                    <div class="lg:flex justify-between space-y-2">
+                        <h4 class="font-black text-4xl text-yellow-400">$250</h4>
+                        <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500 lg:from-blue-500 md:hover:from-blue-700">
+                            <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-2xl p-4 space-y-2">
+                    <div class="rounded-2xl bg-gray-200 py-6">
+                        <img class="h-64 mx-auto" src="images/jacket-3.png" alt="">
+                    </div>                  
+                    <h3 class=" text-2xl text-gray-800 font-bold">Woman Leather Jacket </h3>
+                    <p>Winter clothes are especially outerwear like coats, jackets, hats and  mittens, earmuffs.</p>
+                    <div class="lg:flex justify-between space-y-2">
+                        <h4 class="font-black text-4xl text-yellow-400">$250</h4>
+                        <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 lg:from-blue-500 md:hover:from-blue-700">
+                            <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                    </div>
+                </div>
+            </div>
+         
+        </section>
+
+        <section class="container mx-auto">
+            <h1 class="uppercase font-bold text-gray-800 text-3xl my-8 px-4">Man Jacket</h1>
+
+            <!----------------- Man Ajcket Container --------------->
+            <div class="grid lg:grid-cols-3 gap-7">
+                <div class="shadow-lg rounded-2xl p-4 space-y-2">
+                    <div class="rounded-2xl bg-gray-200 py-6">
+                        <img class="h-64 mx-auto" src="images/jacket-4.png" alt="">
+                    </div>
+                    <h3 class=" text-2xl text-gray-800 font-bold">Snowboard Jacket Mens</h3>
+                    <p>Winter clothes are especially outerwear like coats, jackets, hats and  mittens, earmuffs.</p>
+                    <div class="lg:flex justify-between space-y-2">
+                        <h4 class="font-black text-4xl text-yellow-400">$250</h4>
+                        <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-green-500 lg:from-blue-500 md:hover:from-blue-700">
+                            <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-2xl p-4 space-y-2">
+                    <div class="rounded-2xl bg-gray-200 py-6">
+                        <img class="h-64 mx-auto" src="images/jacket-5.png" alt="">
+                    </div>
+                    <h3 class=" text-2xl text-gray-800 font-bold">Man Leather Jackets</h3>
+                    <p>Winter clothes are especially outerwear like coats, jackets, hats and  mittens, earmuffs.</p>
+                    <div class="lg:flex justify-between space-y-2">
+                        <h4 class="font-black text-4xl text-yellow-400">$250</h4>
+                        <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500 lg:from-blue-500 md:hover:from-blue-700">
+                            <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-2xl p-4 space-y-2">
+                    <div class="rounded-2xl bg-gray-200 py-6">
+                        <img class="h-64 mx-auto" src="images/jacket-6.png" alt="">
+                    </div>                  
+                    <h3 class=" text-2xl text-gray-800 font-bold">Man Casual Jackets</h3>
+                    <p>Winter clothes are especially outerwear like coats, jackets, hats and  mittens, earmuffs.</p>
+                    <div class="lg:flex justify-between space-y-2">
+                        <h4 class="font-black text-4xl text-yellow-400">$250</h4>
+                        <button class="bg-green-400 text-white px-8 py-4 uppercase rounded-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 lg:from-blue-500 md:hover:from-blue-700">
+                            <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Buy now</button>
+                    </div>
+                </div>
+            </div>
+         
+        </section>
+        <section class="container mx-auto my-16">
+            <div class="lg:grid grid-cols-2 space-y-12 gap-7">
+                <div class="flex justify-around rounded-2xl shadow-lg">
+                   <div >
+                       <img class="w-28 h-24" src="icons/image 12.png" alt="">
+                   </div>
+                   <div>
+                       <h2 class="text-gray-800 font-bold text-2xl">Find the Perfect Fit</h2>
+                       <p>Everybody is different, which is why we <br>
+                        offer styles for every body</p>
+                   </div>
+                </div>
+                <div class="row-span-3 0">
+                    <img src="images/shopping.png" alt="">
+                </div>
+                <div class="rounded-2xl shadow-lg flex justify-around ">
+                    <div>
+                        <img class="w-28 h-24" src="icons/image 13.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-gray-800 font-bold text-2xl">Find the Perfect Fit</h2>
+                        <p>Everybody is different, which is why we <br>
+                         offer styles for every body</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl shadow-lg flex justify-around ">
+                    <div>
+                        <img class="w-28 h-24" src="icons/image 14.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-gray-800 font-bold text-2xl">Find the Perfect Fit</h2>
+                        <p>Everybody is different, which is why we <br>
+                         offer styles for every body</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+       
+    </main>
+    <footer>
+       <p class="text-center my-5"><small>&copy;2021 Clearwater Marine Aquarium</small></p>
+    </footer>
+</body>
+</html>
